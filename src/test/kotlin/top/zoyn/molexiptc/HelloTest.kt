@@ -14,7 +14,7 @@ class HelloTest {
     fun testGetIpLocation() {
         val ip = HttpUtils
             .get(
-                "http://opendata.baidu.com/api.php?query=39.97.34.28&co=&resource_id=6006&oe=utf8",
+                "http://opendata.baidu.com/api.php?query=ip地址&co=&resource_id=6006&oe=utf8",
                 null
             )
         val code = (ip["code"] ?: "-1").toInt()
